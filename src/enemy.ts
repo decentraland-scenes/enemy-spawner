@@ -7,10 +7,10 @@ const explosionSound = new Sound(new AudioClip("sounds/explosion.mp3"))
 
 // Preload glowing spaceship for when a spaceship is destroyed
 const glowingSpaceship = new Entity()
+engine.addEntity(glowingSpaceship)
 glowingSpaceship.addComponent(new GLTFShape("models/glowingSpaceship.glb"))
 glowingSpaceship.addComponent(new Transform())
 glowingSpaceship.getComponent(Transform).scale.setAll(0)
-engine.addEntity(glowingSpaceship)
 
 // Configuration
 const TRAVEL_DISTANCE = 28
