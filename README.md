@@ -4,7 +4,7 @@ _demo of enemy-spawner scene running in preview._
 ![demo](https://github.com/decentraland-scenes/enemy-spawner/blob/master/screenshots/enemy-spawner.gif)
 
 ## Description
-Example of enemy spawners that spawn spaceships spawn within the boundaries of portals, which come in a variety of shapes: circle, triangle and rectangle.
+Example of enemy spawners that spawn spaceships within the boundaries of portals, which come in a variety of shapes: circle, triangle and rectangle.
 
 ## Instructions
 Use your mouse to look around and <kbd>W</kbd> <kbd>A</kbd> <kbd>S</kbd> <kbd>D</kbd> keys on your keyboard to move forward, left, backward and right respectively. To fire at an enemy spaceship, use the Left Mouse Button.
