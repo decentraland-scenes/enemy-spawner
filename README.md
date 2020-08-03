@@ -4,16 +4,16 @@ _demo of enemy-spawner scene running in preview._
 ![demo](https://github.com/decentraland-scenes/enemy-spawner/blob/master/screenshots/enemy-spawner.gif)
 
 ## Description
-Example of enemy spawners that spawn spaceships within the boundaries of portals, which come in a variety of shapes: circle, triangle and rectangle. To view the scene, please visit [here](https://enemy-spawner.vercel.app/).
+Spawning enemy spaceships from portals, which come in a variety of shapes: circle, triangle and rectangle. To view the scene, please visit [here](https://enemy-spawner.vercel.app/).
 
 ## Instructions
-Use your mouse to look around and <kbd>W</kbd> <kbd>A</kbd> <kbd>S</kbd> <kbd>D</kbd> keys on your keyboard to move forward, left, backward and right respectively. To fire at an enemy spaceship, use the Left Mouse Button.
+Use your mouse to look around and <kbd>W</kbd> <kbd>A</kbd> <kbd>S</kbd> <kbd>D</kbd> keys on your keyboard to move forward, left, backward and right respectively. Press the <kbd>Space</kbd> key to jump and the Left Mouse Button to fire at an enemy spaceship.
 
 ## Running the scene
 After you clone the project, run the following:
 
 ```
-$ npm install
+$ npm i -g decentraland
 ```
 
 Followed by:
