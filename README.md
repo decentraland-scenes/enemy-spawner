@@ -9,18 +9,24 @@ Spawning enemy spaceships from portals, which come in a variety of shapes: circl
 ## Instructions
 Use your mouse to look around and <kbd>W</kbd> <kbd>A</kbd> <kbd>S</kbd> <kbd>D</kbd> keys on your keyboard to move forward, left, backward and right respectively. Press the <kbd>Space</kbd> key to jump and the <kbd>Left Mouse Button</kbd> to fire at an enemy spaceship.
 
-## Running the scene
-After you clone the project, run the following:
+## Try it out
+
+**Install the CLI**
+
+Download and install the Decentraland CLI by running the following command:
 
 ```
 $ npm i -g decentraland
 ```
 
-Followed by:
+**Previewing the scene**
+
+Download this example and navigate to its directory, then run:
 
 ```
-$ dcl start
+$  dcl start
 ```
+
 ## Acknowledgements
 The following files were taken from https://freesound.org/:
 
