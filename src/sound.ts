@@ -4,7 +4,7 @@ export class Sound extends Entity {
     engine.addEntity(this)
     this.addComponent(new AudioSource(clip))
     this.addComponent(new Transform())
-    this.getComponent(Transform).position = Camera.instance.position
+    this.setParent(Attachable.AVATAR)
   }
   playAudio() {
     this.getComponent(AudioSource).playOnce()
