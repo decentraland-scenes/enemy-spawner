@@ -26,8 +26,8 @@ export class Enemy extends Entity {
     spawnSound.getComponent(AudioSource).playOnce()
 
     // Spaceship movement
-    let startPos = transform.position
-    let endPos = new Vector3(
+    const startPos = transform.position
+    const endPos = new Vector3(
       startPos.x,
       startPos.y,
       startPos.z - TRAVEL_DISTANCE
@@ -49,9 +49,8 @@ export class Enemy extends Entity {
         () => {
           this.removeComponent(utils.MoveTransformComponent) // Stop the spaceship
           glowingSpaceship.getComponent(Transform).scale.setAll(1)
-          glowingSpaceship.getComponent(Transform).position = this.getComponent(
-            Transform
-          ).position
+          glowingSpaceship.getComponent(Transform).position =
+            this.getComponent(Transform).position
 
           // Glow for 1/4 of a second before disappearing
           glowingSpaceship.addComponent(
@@ -65,7 +64,7 @@ export class Enemy extends Entity {
         {
           button: ActionButton.POINTER,
           showFeedback: false,
-          distance: 50,
+          distance: 50
         }
       )
     )

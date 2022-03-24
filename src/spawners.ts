@@ -4,7 +4,7 @@ import { Enemy } from './enemy'
 const spaceships = {
   redSpaceship: new GLTFShape('models/redSpaceship.glb'),
   greenSpaceship: new GLTFShape('models/greenSpaceship.glb'),
-  blueSpaceship: new GLTFShape('models/blueSpaceship.glb'),
+  blueSpaceship: new GLTFShape('models/blueSpaceship.glb')
 }
 
 // General config
@@ -28,15 +28,15 @@ function getRandomSpawnTime(): number {
 const circle = {
   radius: 3.25,
   centerX: 6,
-  centerY: 6,
+  centerY: 6
 }
 const circleSpawner = new Entity()
 circleSpawner.addComponent(
   new utils.Interval(getRandomSpawnTime(), () => {
-    let randomRadius = circle.radius * Math.sqrt(Math.random())
-    let angle = Math.random() * 2 * Math.PI
-    let x = circle.centerX + randomRadius * Math.cos(angle)
-    let y = circle.centerY + randomRadius * Math.sin(angle)
+    const randomRadius = circle.radius * Math.sqrt(Math.random())
+    const angle = Math.random() * 2 * Math.PI
+    const x = circle.centerX + randomRadius * Math.cos(angle)
+    const y = circle.centerY + randomRadius * Math.sin(angle)
     spawnEnemy('redSpaceship', x, y, POSITION_Z)
   })
 )
@@ -48,20 +48,20 @@ const triangle = {
   pointB: new Vector2(0, 2.289),
   pointC: new Vector2(-3.114, -3.106),
   centerX: 16,
-  centerY: 6,
+  centerY: 6
 }
 const triangleSpawner = new Entity()
 triangleSpawner.addComponent(
   new utils.Interval(getRandomSpawnTime(), () => {
-    let r1 = Math.random()
-    let r2 = Math.random()
-    let sqrtR1 = Math.sqrt(r1)
-    let x =
+    const r1 = Math.random()
+    const r2 = Math.random()
+    const sqrtR1 = Math.sqrt(r1)
+    const x =
       triangle.centerX +
       (1 - sqrtR1) * triangle.pointA.x +
       sqrtR1 * (1 - r2) * triangle.pointB.x +
       sqrtR1 * r2 * triangle.pointC.x
-    let y =
+    const y =
       triangle.centerY +
       (1 - sqrtR1) * triangle.pointA.y +
       sqrtR1 * (1 - r2) * triangle.pointB.y +
@@ -76,14 +76,14 @@ const rectangle = {
   sizeX: 6,
   sizeY: 6,
   centerX: 27,
-  centerY: 6,
+  centerY: 6
 }
 const rectangleSpawner = new Entity()
 rectangleSpawner.addComponent(
   new utils.Interval(getRandomSpawnTime(), () => {
-    let x =
+    const x =
       rectangle.centerX - rectangle.sizeX / 2 + Math.random() * rectangle.sizeX
-    let y =
+    const y =
       rectangle.centerY - rectangle.sizeY / 2 + Math.random() * rectangle.sizeY
     spawnEnemy('blueSpaceship', x, y, POSITION_Z)
   })
